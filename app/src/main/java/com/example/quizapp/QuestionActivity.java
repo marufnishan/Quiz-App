@@ -53,11 +53,11 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
     {
         questionList = new ArrayList<>();
 
-        questionList.add(new Question("Question 1","A","B","C","D",2));
-        questionList.add(new Question("Question 2","D","B","C","A",2));
-        questionList.add(new Question("Question 3","A","C","B","D",2));
-        questionList.add(new Question("Question 4","A","D","C","B",2));
-        questionList.add(new Question("Question 5","C","B","A","D",2));
+        questionList.add(new Question("Question 1.Capital City of Bangladesh?","Dhaka","Borisal","Noakhali","Rangpur",1));
+        questionList.add(new Question("Question 2.What is the longest sea beach in the world?","Cox's Bazar","Stockton Beach","Virginia Beach","Bali sea beach",1));
+        questionList.add(new Question("Question 3.Who is the owner of Android os?","Walton","Hawei","Apple","Google",4));
+        questionList.add(new Question("Question 4.What is the currency of Bangladesh","USD","EURO","RUPI","BDT",4));
+        questionList.add(new Question("Question 5.What year did Bangladesh finally become independent and gain the name it has today?","1947","1971","1952","1961",2));
 
         setQuestions();
 
@@ -189,8 +189,8 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
             //Go to Score Activity
             Intent intent = new Intent(QuestionActivity.this,ScoreActivity.class);
             intent.putExtra("SCORE",String.valueOf(score) + "/" + String.valueOf(questionList.size()));
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
-            QuestionActivity.this.finish();
         }
     }
 
@@ -245,5 +245,12 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
 
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        countDown.cancel();
     }
 }

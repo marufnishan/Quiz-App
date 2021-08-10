@@ -17,12 +17,14 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private TextView title;
     private Button start;
+    private Button todo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         title = findViewById(R.id.main_title);
         start = findViewById(R.id.ma_startB);
+        todo = findViewById(R.id.ma_startB2);
 
         Typeface typeface = ResourcesCompat.getFont(this,R.font.blacklist);
         title.setTypeface(typeface);
@@ -34,5 +36,14 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             }
         });
+
+        todo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,TodoSplashActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

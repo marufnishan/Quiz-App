@@ -11,7 +11,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        app:titleTextColor="@color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
         android:background="@color/red">
 
     </androidx.appcompat.widget.Toolbar>
