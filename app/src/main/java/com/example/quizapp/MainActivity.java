@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView title;
     private Button start;
     private Button todo;
+    private Button dropfag;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         title = findViewById(R.id.main_title);
         start = findViewById(R.id.ma_startB);
         todo = findViewById(R.id.ma_startB2);
+        dropfag = findViewById(R.id.ma_startB3);
 
         Typeface typeface = ResourcesCompat.getFont(this,R.font.blacklist);
         title.setTypeface(typeface);
@@ -41,6 +43,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,TodoSplashActivity.class);
+                startActivity(intent);
+            }
+        });
+        dropfag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,DropFragActivity.class);
                 startActivity(intent);
             }
         });

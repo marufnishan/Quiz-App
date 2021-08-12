@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizAppV10">
         <activity
+            android:name=".DropFragActivity"
+            android:exported="true" />
+        <activity
             android:name=".TodoSplashActivity"
             android:exported="true" />
         <activity

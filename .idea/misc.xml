@@ -8,6 +8,7 @@
         <entry key="..\:/QuizAppv10/app/src/main/res/drawable/ic_baseline_done_all_24.xml" value="0.3828125" />
         <entry key="..\:/QuizAppv10/app/src/main/res/drawable/round_corner.xml" value="0.3828125" />
         <entry key="..\:/QuizAppv10/app/src/main/res/layout/activity_category.xml" value="0.36666666666666664" />
+        <entry key="..\:/QuizAppv10/app/src/main/res/layout/activity_drop_frag.xml" value="0.36666666666666664" />
         <entry key="..\:/QuizAppv10/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
         <entry key="..\:/QuizAppv10/app/src/main/res/layout/activity_question.xml" value="0.36666666666666664" />
         <entry key="..\:/QuizAppv10/app/src/main/res/layout/activity_score.xml" value="0.36666666666666664" />
@@ -18,6 +19,9 @@
         <entry key="..\:/QuizAppv10/app/src/main/res/layout/add_new_task.xml" value="0.36666666666666664" />
         <entry key="..\:/QuizAppv10/app/src/main/res/layout/cat_item_layout.xml" value="0.36666666666666664" />
         <entry key="..\:/QuizAppv10/app/src/main/res/layout/each_task.xml" value="0.36666666666666664" />
+        <entry key="..\:/QuizAppv10/app/src/main/res/layout/fragment_a.xml" value="0.36666666666666664" />
+        <entry key="..\:/QuizAppv10/app/src/main/res/layout/fragment_b.xml" value="0.36666666666666664" />
+        <entry key="..\:/QuizAppv10/app/src/main/res/layout/fragment_blank.xml" value="0.36666666666666664" />
         <entry key="..\:/QuizAppv10/app/src/main/res/layout/set_item_layout.xml" value="0.18" />
       </map>
     </option>
