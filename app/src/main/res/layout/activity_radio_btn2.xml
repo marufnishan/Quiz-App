@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".RadioBtnActivity2">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question 3.Who is the owner of Android os?"
+        android:layout_marginBottom="40px"
+        android:textStyle="bold"
+        android:textColor="#207A23"
+        android:textSize="28sp"
+        android:gravity="center_horizontal">
+
+    </TextView>
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Walton"
+            android:textSize="24sp">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hawei"
+            android:textSize="24sp">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/r3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apple"
+            android:textSize="24sp">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/r4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google"
+            android:textSize="24sp">
+
+        </RadioButton>
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question 4.What is the currency of Bangladesh"
+        android:layout_marginBottom="40px"
+        android:textStyle="bold"
+        android:textColor="#207A23"
+        android:textSize="28sp"
+        android:gravity="center_horizontal">
+
+    </TextView>
+    <RadioGroup
+        android:id="@+id/rg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USD"
+            android:textSize="24sp">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EURO"
+            android:textSize="24sp">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RUPI"
+            android:textSize="24sp">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BDT"
+            android:textSize="24sp">
+
+        </RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="28sp"
+        android:onClick="next"
+        android:layout_marginTop="40px"
+        android:background="#D50707">
+
+    </Button>
+
+</LinearLayout>

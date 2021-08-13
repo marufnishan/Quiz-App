@@ -10,6 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizAppV10">
         <activity
+            android:name=".RadioBtnActivity3"
+            android:exported="true" />
+        <activity
+            android:name=".RadioBtnActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".RadioBtnActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NavigationActivity"
+            android:exported="true"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/Theme.QuizAppV10.NoActionBar" />
+        <activity
             android:name=".DropFragActivity"
             android:exported="true" />
         <activity

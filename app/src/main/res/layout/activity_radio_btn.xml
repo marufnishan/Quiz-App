@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".RadioBtnActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question 1.Capital City of Bangladesh"
+        android:layout_marginBottom="40px"
+        android:textStyle="bold"
+        android:textColor="#207A23"
+        android:textSize="28sp"
+        android:gravity="center_horizontal">
+
+    </TextView>
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dhaka"
+            android:textSize="24sp">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borisal"
+            android:textSize="24sp">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/r3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Noakhali"
+            android:textSize="24sp">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/r4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rangpur"
+            android:textSize="24sp">
+
+        </RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question 2.What is the longest sea beach in the world"
+        android:layout_marginBottom="40px"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="#207A23"
+        android:textSize="28sp"
+        android:gravity="center_horizontal">
+
+    </TextView>
+    <RadioGroup
+        android:id="@+id/rg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cox's Bazar"
+            android:textSize="24sp">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stockton Beach"
+            android:textSize="24sp">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Virginia Beach"
+            android:textSize="24sp">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bali sea beach"
+            android:textSize="24sp">
+
+        </RadioButton>
+    </RadioGroup>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="28sp"
+        android:onClick="next1"
+        android:layout_marginTop="40px"
+        android:background="#D50707">
+
+    </Button>
+
+</LinearLayout>

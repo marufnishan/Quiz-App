@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     private Button start;
     private Button todo;
     private Button dropfag;
+    private Button navigat;
+    private Button rbquiz;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
         start = findViewById(R.id.ma_startB);
         todo = findViewById(R.id.ma_startB2);
         dropfag = findViewById(R.id.ma_startB3);
+        navigat = findViewById(R.id.ma_startB4);
+        rbquiz = findViewById(R.id.ma_startBRadio);
 
         Typeface typeface = ResourcesCompat.getFont(this,R.font.blacklist);
         title.setTypeface(typeface);
@@ -50,6 +54,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,DropFragActivity.class);
+                startActivity(intent);
+            }
+        });
+        navigat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,NavigationActivity.class);
+                startActivity(intent);
+            }
+        });
+        rbquiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,RadioBtnActivity.class);
                 startActivity(intent);
             }
         });
